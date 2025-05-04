@@ -1,0 +1,467 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+
+}
+
+.main {
+    background-image: url(bg.jpeg.jpeg);
+    background-size: max(1200px, 100vw);
+    height: 95vh;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center center;
+    overflow-x: hidden;
+
+}
+
+.main .box {
+    height: 95vh;
+    width: 100vw;
+    background-color: black;
+    opacity: 0.75;
+    position: absolute;
+    top: 0;
+
+}
+
+nav {
+    max-width: 80vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    height: 62px;
+}
+
+#logo {
+    width: 150px;
+    position: relative;
+    z-index: 10;
+    background-color: transparent;
+    margin: 8px;
+    height: 40px;
+}
+
+.textfront {
+    height: calc(100% - 62px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+    position: relative;
+    font-family: 'Martel Sans', sans-serif;
+    padding: 0px 23px;
+    text-align: center;
+
+}
+
+.textfront> :nth-child(1) {
+    font-weight: 900;
+    font-size: 56px;
+    font-style: bolder;
+    Color: rgb(255, 255, 255);
+    Line-Height: 70px;
+    cursor: text;
+}
+
+.textfront> :nth-child(2) {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.textfront> :nth-child(3) {
+    font-size: 20px;
+}
+
+body {
+    background-color: black;
+}
+
+.btn-red {
+    background-color: red;
+    color: white;
+    border-radius: 4px;
+    font-size: 20px;
+    padding: 10px 18px;
+    font-weight: 200;
+    border: none;
+    cursor: pointer;
+
+}
+
+.btn-red-sm {
+    background-color: red;
+    color: white;
+    position: relative;
+    z-index: 50;
+    padding: 8px 20px;
+    font-weight: normal;
+    border-radius: 4px;
+    border: none;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.textfrontButtons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+
+}
+
+.main input {
+    font-size: 15px;
+    padding: 15px 124px 7px 8px;
+    border-radius: 4px;
+    background-color: rgba(23, 23, 23, 0.2);
+    color: white;
+}
+
+.wave::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    margin-top: -.25rem;
+    border-radius: inherit;
+    background: linear-gradient(to right, rgba(33, 13, 22, 1) 16%, rgba(184, 40, 105, 1), rgba(229, 9, 20, 1), rgba(184, 40, 105, 1), rgba(33, 13, 22, 1) 84%);
+}
+
+.wave {
+    box-sizing: border-box;
+    position: absolute;
+    height: 0.8%;
+    width: 100%;
+    top: 610px;
+    margin: auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border: solid .25rem transparent;
+    border-top-left-radius: 50% 100%;
+    border-top-right-radius: 50% 100%;
+    border-bottom: none;
+    background: radial-gradient(50% 500% at 50% -420%, rgba(64, 97, 231, 0.4) 80%, rgba(0, 0, 0, 0.1) 100%), black;
+    z-index: 10;
+    background-clip: padding-box;
+}
+
+.first {
+    margin: 0px;
+    padding: 45px;
+    background: radial-gradient(50% 500% at 50% -420%, rgba(64, 97, 231, 0.4) 80%, rgba(0, 0, 0, 0.1) 100%), black;
+}
+
+.heading {
+    font-family: 'Martel Sans', sans-serif;
+    color: white;
+    margin: 0px 0px 0px 79px;
+    font-size: 25px;
+}
+
+
+#country {
+    margin: 14px 0px 0px 81px;
+    padding: 7px 15px 8px 11px;
+    background: transparent;
+    color: white;
+    font-size: 15px;
+
+}
+
+#watch {
+    margin: 14px 0px 0px 20px;
+    padding: 7px 15px 8px 11px;
+    background: transparent;
+    color: white;
+    font-size: 15px;
+}
+
+.scroll-container {
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: auto;
+    /* Keep scrolling enabled */
+    white-space: nowrap;
+    padding: 10px 0px;
+    margin: 0px 85px 0px 85px;
+    scroll-behavior: smooth;
+    /* Added smooth scrolling */
+    scrollbar-width: none;
+    /* Hide scrollbar for Firefox */
+}
+
+.scroll-container::-webkit-scrollbar {
+    display: none;
+    /* Hide scrollbar for Chrome, Safari, and Edge */
+}
+
+.item {
+    position: relative;
+    display: inline-block;
+    width: 82px;
+    margin: 0px 116px 1px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.item img {
+    width: 11em;
+    border-radius: 8px;
+}
+
+.rank {
+    position: absolute;
+    top: 125px;
+    left: 10px;
+    background: transparent;
+    color: rgb(0, 0, 0);
+    font-size: 100px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transform: translateX(-68%);
+    text-shadow: 1px 2px 0px white, -1px -1px 0px white;
+}
+
+.item:hover {
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+.scroll-button {
+    position: absolute;
+    top: 148%;
+    transform: translateY(-50%);
+    background-color: rgba(128, 115, 115, 0.5);
+    color: white;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 4px;
+    z-index: 1;
+    height: 124px;
+    border-radius: 15px;
+    width: 25px;
+    scroll-behavior: auto;
+    scroll-snap-type: x mandatory;
+    scroll-margin-inline-start: 2.5em;
+    scrollbar-width: none;
+    overflow-x: hidden;
+}
+
+.scroll-container::-webkit-scrollbar {
+    display: none;
+}
+
+.left {
+    left: 0;
+    margin-left: 38x;
+    /* Adjusted to fit your layout */
+}
+
+.right {
+    right: 0;
+    margin-right: 20px;
+    /* Adjusted to fit your layout */
+}
+
+
+.third {
+    width: 100vw;
+    height: 70vh;
+    overflow: hidden;
+}
+
+h2 {
+    color: white;
+    margin: 52px 0px 0px 90px;
+    padding: 7px 15px 18px 65px;
+    font-family: 'Martel Sans', sans-serif;
+}
+
+.benefits {
+
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+    padding-left: 10px;
+    overflow-x: hidden;
+
+}
+
+.one {
+    max-width: 252px;
+    height: 307px;
+    color: white;
+    border-radius: 20px;
+    background: linear-gradient(149deg, #192247 0%, #210e17 96.86%);
+    margin: 0px 14px 0px -2px;
+    padding: 0px 58px 0px 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    text-align: start;
+    font-family: 'Martel Sans', sans-serif;
+    line-height: 1.6em;
+}
+
+p {
+    color: grey;
+    font-weight: 200;
+    font-family: 'Martel Sans', sans-serif;
+}
+
+.forth {
+    color: white;
+    font-size: 25px;
+    max-height: 100vh;
+    width: 100%;
+    background-color: #000;
+
+}
+
+.faq {
+    margin: 0px 0px 10px 138px;
+    font-weight: 600;
+    font-family: 'Martel Sans', sans-serif;
+    cursor: text;
+    overflow-x: hidden;
+}
+
+.Fp {
+    display: flex;
+    justify-content: space-between;
+    max-width: 75vw;
+    margin: 8px 0px 5px 138px;
+    padding: 26px;
+    background-color: rgba(128, 128, 128, 0.301);
+    font-size: 25px;
+    font-family: 'Martel Sans', sans-serif;
+    cursor: pointer;
+}
+.first p{
+    color: white;
+}
+
+.Fp:hover {
+    background-color: rgb(95, 92, 92);
+}
+
+.five {
+    max-width: 100vw;
+    height: auto;
+    margin: 20px 20px 60px 20px;
+    
+
+
+}
+
+.five p {
+    margin-left: 400px;
+    padding: 40px 0px 20px 0px;
+    color: white;
+    font-weight: 300;
+}
+
+footer {
+    color: white;
+    max-width: 75vw;
+    margin-left: 130px;
+    max-height: fit-content;
+    overflow-x: hidden;
+
+
+}
+
+a {
+    color: rgb(143, 141, 141);
+    margin:0px 10px 13px 0px;
+    cursor: pointer;
+    
+}
+
+footer span {
+    color: rgb(143, 141, 141);
+    text-align: start;
+    margin: 5px;
+    display: inline-block;
+
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+
+    color: white;
+    max-width: 60vw;
+    margin: auto;
+
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+}
+
+footer {
+    margin: 14px 0px 0px 81px;
+    padding: 7px 25px 0px 16px;
+    background: transparent;
+    color: white;
+    font-size: 15px;
+    border-radius: 5px;
+    display: flex;
+
+}
+
+.five input {
+    font-size: 15px;
+    padding: 15px 324px 7px 8px;
+    border-radius: 4px;
+    background-color: rgba(23, 23, 23, 0.2);
+    color: white;
+
+}
+
+.endd {
+    display: block
+}
+
+.language-btn {
+    background: transparent;
+    color: white;
+    padding: 4px 10px 0px 20px;
+    border-radius: 6px;
+    margin: 7px 0px 10px -126px;
+    border-color: grey;
+cursor: pointer;
+}
+
+.linee {
+    margin: 50px 0px 20px 117px;
+
+}
+
+footer p {
+    color: rgb(170, 165, 165);
+ margin: 27px 0px 0px -120px;
+    font-size: 15px;
+}
